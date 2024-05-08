@@ -16,11 +16,16 @@ public class HoraExacta extends Hora {
 	 * @param hora Número de horas
 	 * @param minutos Número de minutos
 	 * @param segundos Números de segundos
+	 * @throws NegativeSecondException 
+	 * @throws NegativeMinuteException 
+	 * @throws NegativeHourException 
 	 */
-	public HoraExacta(int hora, int minutos, int segundos) {
+	public HoraExacta(int hora, int minutos, int segundos) throws NegativeSecondException, NegativeHourException, NegativeMinuteException {
 		super(hora, minutos);
 		if (segundos >= 0 && segundos < 60) {
 			this.segundos = segundos;
+		}else if(segundos < 0){
+			throw new NegativeSecondException();
 		}
 	}
 
@@ -28,13 +33,16 @@ public class HoraExacta extends Hora {
 	 * Método que cambia el valor de los segundos
 	 * @param valor Segundos introducidos
 	 * @return Devuelve un booleano segun si se ha podido añadir o no
+	 * @throws NegativeSecondException 
 	 */
-	boolean setSegundos(int valor) {
+	boolean setSegundos(int valor) throws NegativeSecondException {
 		boolean anadido = false;
 
 		if (valor >= 0 && valor < 60) {
 			this.segundos = valor;
 			anadido = true;
+		}else if(valor > 0){
+			throw new NegativeSecondException();
 		}
 
 		return anadido;

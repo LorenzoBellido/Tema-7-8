@@ -7,8 +7,16 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		
-	}
+		try {
+			HoraExacta h = new HoraExacta(2, 22, -2);
+		}catch(NegativeHourException h) {
+			System.out.println(h);
+		}catch(NegativeMinuteException m) {
+			System.out.println(m);
+		}catch(NegativeSecondException s) {
+			System.out.println(s);
+		}
+		}
 
 	public static void menu() {
 	
