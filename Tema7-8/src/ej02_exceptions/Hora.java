@@ -1,4 +1,4 @@
-package ej02_Exceptions;
+package ej02_exceptions;
 /**
  * Clase donde se recoge la hora y los minutos
  */

@@ -1,4 +1,4 @@
-package ej04_Exception;
+package ej04_exception;
 
 public class ExceptionPrecioCompra extends Exception{
 

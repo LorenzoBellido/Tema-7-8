@@ -1,4 +1,4 @@
-package ej02_Exceptions;
+package ej02_exceptions;
 
 public class NegativeMinuteException extends Exception{
 

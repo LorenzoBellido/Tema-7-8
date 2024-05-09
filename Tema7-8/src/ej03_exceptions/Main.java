@@ -1,4 +1,4 @@
-package ej03_Exceptions;
+package ej03_exceptions;
 
 public class Main {
 

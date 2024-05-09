@@ -1,4 +1,4 @@
-package ej01_Exceptions;
+package ej01_exceptions;
 
 import java.util.Scanner;
 
