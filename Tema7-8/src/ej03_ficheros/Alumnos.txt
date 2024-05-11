@@ -1,3 +1,5 @@
 juan 22 1.77
 luis 21 1.80
 pedro 20 1.73
+hector 19 1.20
+edu 19 1.25
